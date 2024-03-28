@@ -10,3 +10,14 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// Fonts
+p {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+// Global
+a {
+  color: white
+}
