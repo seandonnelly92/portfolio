@@ -11,17 +11,32 @@
 @import "components/index";
 @import "pages/index";
 
+
 // Fonts
 p {
   font-family: 'Courier New', Courier, monospace;
-  color: white;
+  color: $text;
 }
 
 // Global
+body {
+  background-color: $green-primary;
+}
+
 a {
-  color: white
+  color: $link;
+  text-decoration: none;
 }
 
 a:hover {
-  color: rgb(255, 187, 0);
+  color: $link-hover;
+  text-decoration: underline dotted;
+}
+
+// Global components
+
+.box {
+  background-color: $green-secondary;
+  border: solid 1px $green-outline;
+  border-radius: 60px;
 }

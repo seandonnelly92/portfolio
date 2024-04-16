@@ -19,8 +19,17 @@ $danger:     $red;
 $warning:    $orange;
 
 // Buttons & inputs' radius
-$border-radius:    2px;
-$border-radius-lg: 2px;
-$border-radius-sm: 2px;
+$border-radius:    30px;
+$border-radius-lg: 40px;
+$border-radius-sm: 30px;
 
-// Override other variables below!
+// BESPOKE COLOURS
+$green-primary: #154344;
+$green-secondary: #235050;
+$green-outline: #315F5F;
+$grey: #B3B3B3;
+$text: rgba(255, 255, 255, 1);
+$toggle-on:rgba(255, 255, 255, 1);
+$toggle-off: rgba(255, 255, 255, 0.5);
+$link: #FFE977;
+$link-hover: #FFEE96;
