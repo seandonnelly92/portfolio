@@ -32,3 +32,11 @@ a:hover {
   color: $link-hover;
   text-decoration: underline dotted;
 }
+
+// Global components
+
+.box {
+  background-color: $green-secondary;
+  border: solid 1px $green-outline;
+  border-radius: 60px;
+}
