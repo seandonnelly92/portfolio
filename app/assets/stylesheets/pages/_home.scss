@@ -1,4 +1,45 @@
 // Specific CSS for your home-page
+// NAV BAR
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 24px 48px
+}
+
+nav h4 {
+  margin: 0;
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+nav i {
+  color: $grey;
+  font-size: 25px;
+  padding-left: 16px;
+}
+
+nav i:hover {
+  color: white;
+}
+
+// INTRO BOX
+
+.box {
+  background-color: $green-secondary;
+  border: solid 1px $green-outline;
+  border-radius: 60px;
+  padding: 40px 40px;
+  margin: 16px;
+  position: relative;
+}
+
+.image-wrap {
+  float: right;
+  border-radius: 60px;
+  overflow: hidden;
+  margin: 8px 0px 8px 8px;
+}
 
 // LANGUAGE TOGGLE
 
