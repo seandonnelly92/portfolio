@@ -15,21 +15,21 @@
   margin: 0px 15px 0px 15px;
 }
 
-// This is a label that apperas on hover
-.language-toggle::after {
-  content: "Filter by this skill";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
+// This is a label that appears on hover
+// .language-toggle::after {
+//   content: "Filter by this skill";
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+//   visibility: hidden;
+//   opacity: 0;
+//   transition: opacity 0.3s ease;
+// }
 
-.language-toggle:hover::after {
-  visibility: visible;
-  opacity: 1;
-}
+// .language-toggle:hover::after {
+//   visibility: visible;
+//   opacity: 1;
+// }
 
 // Applies these rules to each individual element inside the language-toggle
 .language-toggle * {
