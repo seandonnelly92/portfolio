@@ -56,7 +56,7 @@ nav i:hover {
 }
 
 
-// INTRO BOX 
+// INTRO BOX
 .box {
   background-color: $green-secondary;
   border: solid 1px $green-outline;
@@ -99,8 +99,9 @@ nav i:hover {
 
 
 // LANGUAGE TOGGLE
-
-// Div
+.languages-filter {
+  background-color: red;
+}
 .language-toggle {
   position: relative;
   display: flex;
