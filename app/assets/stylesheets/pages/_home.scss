@@ -22,7 +22,7 @@ nav i:hover {
   color: white;
 }
 
-// STICKY MENU
+// FIXED MENU
 .menu {
   background-color: $green-primary;
   border: 1px solid $green-outline;
@@ -56,6 +56,42 @@ nav i:hover {
 }
 
 
+
+// LANGUAGE BAR
+.languages-bar {
+  background-color: $green-primary;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  padding-top: 104px;
+  margin-top: -64px;
+  padding-bottom: 32px;
+  margin-bottom: 24px;
+  z-index: 8;
+}
+.language-toggle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 80px;
+  height: 80px;
+  margin: 0px 15px 0px 15px;
+}
+
+
+// PROJECTS
+
+.project-area {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  // background-color: red;
+}
+
+
 // INTRO BOX
 .box {
   background-color: $green-secondary;
@@ -64,6 +100,10 @@ nav i:hover {
   padding: 40px 40px;
   margin: 16px;
   position: relative;
+}
+
+.intro-box {
+  z-index: 9;
 }
 
 .image-wrap {
@@ -100,21 +140,6 @@ nav i:hover {
 }
 
 
-// LANGUAGE TOGGLE
-.languages-filter {
-  background-color: red;
-}
-.language-toggle {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 80px;
-  height: 80px;
-  margin: 0px 15px 0px 15px;
-}
 
 // This is a label that appears on hover
 // .language-toggle::after {

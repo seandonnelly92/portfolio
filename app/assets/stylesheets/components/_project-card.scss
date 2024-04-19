@@ -1,0 +1,16 @@
+.project-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: $green-secondary;
+  border: solid 1px $green-outline;
+  margin: 0;
+  position: relative
+}
+
+.project-card p {
+  color: $grey;
+  font-size: 1rem;
+}
