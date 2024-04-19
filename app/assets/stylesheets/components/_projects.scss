@@ -1,0 +1,82 @@
+// PROJECTS
+
+.project-area {
+  margin-left: auto;
+  margin-right: auto;
+  // background-color: red;
+}
+
+.project-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.project-card {
+  background: $green-secondary;
+  border: solid 1px $green-outline;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.15s ease-in-out
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  transition: 0.15s ease-in-out;
+  border: solid 1px white
+}
+
+.project-card-text {
+  padding: 40px 40px 20px 40px;
+}
+.project-card p {
+  color: $grey;
+  font-size: 1rem;
+}
+
+.device-image-container {
+  // background-color: red;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.phone-image {
+  border-radius: 12px;
+  width: 150px;
+  overflow: hidden;
+  border: solid 5px #232323;
+  margin-top: -70px;
+  margin-bottom: -8px;
+  margin-right: -8px;
+}
+
+.desktop-image {
+
+}
+
+.project-languages-row {
+  display: flex;
+  gap: 8px;
+  height: 30px;
+}
+
+.language-icon {
+  fill: $grey;
+}
+
+
+// BACKGROUND IMAGES
+
+.bg-collabradors {
+  // background-image: url("collabradors-dog-walkers-sean-donnelly.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('collabradors-dog-walkers-sean-donnelly.png');
+}
+
+.project-bg {
+  background-size: cover;
+  background-position: center center;
+}

@@ -55,6 +55,33 @@ nav i:hover {
   text-decoration: none;
 }
 
+// INTRO BOX
+.box {
+  background-color: $green-secondary;
+  border: solid 1px $green-outline;
+  border-radius: 60px;
+  // padding: 40px 40px;
+  margin: 16px;
+  position: relative;
+}
+
+.box .inner {
+  margin: 40px;
+}
+
+.intro-box {
+  z-index: 9;
+}
+
+.image-wrap {
+  float: right;
+  border-radius: 20%;
+  overflow: hidden;
+  margin: 8px 0px 8px 8px;
+  max-width: 35%;
+  aspect-ratio: 1;
+}
+
 
 
 // LANGUAGE BAR
@@ -79,40 +106,6 @@ nav i:hover {
   width: 80px;
   height: 80px;
   margin: 0px 15px 0px 15px;
-}
-
-
-// PROJECTS
-
-.project-area {
-  width: 80vw;
-  margin-left: auto;
-  margin-right: auto;
-  // background-color: red;
-}
-
-
-// INTRO BOX
-.box {
-  background-color: $green-secondary;
-  border: solid 1px $green-outline;
-  border-radius: 60px;
-  padding: 40px 40px;
-  margin: 16px;
-  position: relative;
-}
-
-.intro-box {
-  z-index: 9;
-}
-
-.image-wrap {
-  float: right;
-  border-radius: 20%;
-  overflow: hidden;
-  margin: 8px 0px 8px 8px;
-  max-width: 35%;
-  aspect-ratio: 1;
 }
 
 // Availability chip
