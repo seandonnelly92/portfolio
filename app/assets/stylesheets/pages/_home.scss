@@ -1,6 +1,4 @@
-// Specific CSS for your home-page
 // NAV BAR
-
 nav {
   display: flex;
   align-items: center;
@@ -11,6 +9,7 @@ nav h4 {
   margin: 0;
   margin-left: 10px;
   margin-right: auto;
+  font-weight: 400;
 }
 
 nav i {
@@ -23,8 +22,41 @@ nav i:hover {
   color: white;
 }
 
-// INTRO BOX
+// STICKY MENU
+.menu {
+  background-color: $green-primary;
+  border: 1px solid $green-outline;
+  border-radius: 100px;
+  padding: 8px;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin: 12px auto 0px auto;
+  display: flex;
+  gap: 4px;
+}
 
+.menu-item {
+  height: 48px;
+  width: 33%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $grey
+}
+
+.menu-item:hover, .menu-item.active {
+  color: white;
+  background-color: $green-secondary;
+  border: 1px solid $green-outline;
+  text-decoration: none;
+}
+
+
+// INTRO BOX
 .box {
   background-color: $green-secondary;
   border: solid 1px $green-outline;
@@ -67,8 +99,9 @@ nav i:hover {
 
 
 // LANGUAGE TOGGLE
-
-// Div
+.languages-filter {
+  background-color: red;
+}
 .language-toggle {
   position: relative;
   display: flex;
