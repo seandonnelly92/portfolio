@@ -41,6 +41,31 @@ nav i:hover {
   margin: 8px 0px 8px 8px;
 }
 
+// Availability chip
+.availability-chip {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 4px 12px
+}
+
+.availability-chip > p {
+  color: $green-primary;
+  margin: 0px 0px 0px 4px;
+  font-size: 12px;
+}
+
+.availability-dot {
+  background-color: orange;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+}
+
+
 // LANGUAGE TOGGLE
 
 // Div
