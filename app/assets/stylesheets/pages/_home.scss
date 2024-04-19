@@ -62,8 +62,10 @@ nav i:hover {
   background-color: $green-primary;
   position: sticky;
   top: 0px;
+  width: 100%;
   padding-top: 104px;
   margin-top: -64px;
+  padding-bottom: 32px;
   margin-bottom: 24px;
   z-index: 8;
 }
@@ -86,7 +88,7 @@ nav i:hover {
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
-  background-color: red;
+  // background-color: red;
 }
 
 
