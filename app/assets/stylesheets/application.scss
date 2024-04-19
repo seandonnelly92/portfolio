@@ -10,6 +10,7 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "components/project-card";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 // Fonts
@@ -18,10 +19,16 @@ p {
   color: $text;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
   font-family: Poppins;
   color: $text;
   font-weight: bold;
+}
+
+h5, h6 {
+  font-family: Poppins;
+  color: $text;
+  font-weight: Medium;
 }
 
 // Global
