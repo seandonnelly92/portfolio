@@ -68,9 +68,11 @@ nav i:hover {
 
 .image-wrap {
   float: right;
-  border-radius: 60px;
+  border-radius: 20%;
   overflow: hidden;
   margin: 8px 0px 8px 8px;
+  max-width: 35%;
+  aspect-ratio: 1;
 }
 
 // Availability chip
