@@ -1,3 +1,4 @@
+<!-- NAVBAR -->
 <nav>
   <!-- LATER: make this image swap to the other avatar on hover -->
   <%= image_tag("sean-avatar.png", :alt => "Sean's Avatar", style: 'height: 40px; width:auto') %>
@@ -6,13 +7,17 @@
   <a href="https://www.linkedin.com/in/seandonnelly92" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
 </nav>
 
-<div class="menu">
-  <!-- sticky menu here -->
+<!-- STICKY MENU -->
+<div class="menu col-lg-3 col-md-5 col-sm-8 col-10">
+  <a href="#intro" class="menu-item">Intro</a>
+  <a href="#projects" class="menu-item">Projects</a>
+  <a href="#contact" class="menu-item">Contact</a>
 </div>
 
-<div class="d-flex justify-content-center">
+<!-- INTRO -->
+<div class="d-flex justify-content-center intro">
   <div class="box col-sm-11 col-md-8 col-lg-6">
-    <h3>👋🏻 I'm Sean, a Software Engineer with loads of product experience, ideas and energy</h3>
+    <h3 class="mb-3">👋🏻 I'm Sean, a Software Engineer with loads of product experience, ideas and energy</h3>
     <div class="image-wrap">
       <%= image_tag("sean-donnelly.JPG", :alt => "Sean Donnelly", style: 'height: 250px; width:auto') %>
     </div>
@@ -35,8 +40,32 @@
 <%= render partial: 'components/languages_filter' %>
 <!-- PROJECT CARDS -->
 
-<!-- CONTACT AREA -->
+<!-- CONTACT -->
 <div class="d-flex justify-content-center" id="contact">
+  <div class="box col-sm-11 col-md-8 col-lg-6">
+    <h2>I'd love to hear from you</h1>
+    <p>Hello and welcome to my portfolio.</p>
+    <p>I've been building B2B and B2C tech products as a non-technical startup founder for over 5 years. Now, I'm focused on Software Engineering after completing an intensive coding bootcamp.</p>
+    <p>I have led Product, UX, User Research, Sales, Marketing, Fundraising, Management and Compliance. So, it's fair to say I'm exceptionally adaptable and resilient. I'm a proactive problem-solver and I enjoy big challenges.</p>
+    <p>If you're working on something exciting, <a href="/#contact">let's chat</a>!</p>
+    <p>Cheers,<br>
+      Sean</p>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center">
+  <div class="box col-sm-11 col-md-8 col-lg-6">
+    <h2>I'd love to hear from you</h1>
+    <p>Hello and welcome to my portfolio.</p>
+    <p>I've been building B2B and B2C tech products as a non-technical startup founder for over 5 years. Now, I'm focused on Software Engineering after completing an intensive coding bootcamp.</p>
+    <p>I have led Product, UX, User Research, Sales, Marketing, Fundraising, Management and Compliance. So, it's fair to say I'm exceptionally adaptable and resilient. I'm a proactive problem-solver and I enjoy big challenges.</p>
+    <p>If you're working on something exciting, <a href="/#contact">let's chat</a>!</p>
+    <p>Cheers,<br>
+      Sean</p>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center">
   <div class="box col-sm-11 col-md-8 col-lg-6">
     <h2>I'd love to hear from you</h1>
     <p>Hello and welcome to my portfolio.</p>
