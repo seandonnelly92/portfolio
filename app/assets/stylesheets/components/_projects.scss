@@ -60,14 +60,22 @@
 
 .project-languages-row {
   display: flex;
-  gap: 8px;
+  gap: 12px;
   height: 30px;
 }
 
-.language-icon {
-  fill: $grey;
+.project-chip {
+  background-color: rgba(255, 255, 255, 0.97);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 4px 12px;
+  color: $grey;
+  font-size: 12px;
+  margin-top: 16px;
 }
-
 
 // BACKGROUND IMAGES
 
