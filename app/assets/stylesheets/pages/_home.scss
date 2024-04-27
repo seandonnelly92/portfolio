@@ -86,16 +86,25 @@ nav i:hover {
 
 // LANGUAGE BAR
 .languages-bar {
+  display: flex;
+  justify-content: center;
   background-color: $green-primary;
   position: sticky;
   top: 0px;
   width: 100%;
-  padding-top: 104px;
+  padding-top: 88px;
   margin-top: -64px;
-  padding-bottom: 32px;
+  padding-bottom: 16px;
   margin-bottom: 24px;
   z-index: 8;
 }
+
+.language-toggle-container {
+  display: flex;
+  overflow: scroll;
+  padding: 16px
+}
+
 .language-toggle {
   position: relative;
   display: flex;
