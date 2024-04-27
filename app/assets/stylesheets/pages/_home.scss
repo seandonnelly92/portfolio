@@ -185,3 +185,42 @@ nav i:hover {
 .language-icon-label {
   font-size: 12px;
 }
+
+
+
+// MEDIA QUERIES FOR RESPONSIVE DESIGN
+
+/* Large devices (laptops/desktops, between 1300px and 992px width) */
+@media only screen and (max-width: 1299px) {
+}
+
+/* Medium devices (landscape tablets, between 992px and 768px width) */
+@media only screen and (max-width: 991px) {
+  // Language icons in language bar: reduce size and add horizontal scroll
+
+}
+
+/* Small devices (portrait tablets and large phones, between 768px and 600px width) */
+@media only screen and (max-width: 767px) {
+  nav h4 {
+    display: none;
+  }
+
+  nav img {
+    margin-right: auto;
+  }
+}
+
+/* Extra small devices (phones, less than 600px width) */
+@media only screen and (max-width: 599px) {
+  nav img, nav i {
+    transform: scale(0.9);
+    padding: 2px
+  }
+
+}
+
+/* Optionally, if you need a breakpoint for very large screens, use min-width */
+@media only screen and (min-width: 1600px) {
+  /* Your styles for very large screens here */
+}
