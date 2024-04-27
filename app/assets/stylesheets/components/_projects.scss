@@ -1,12 +1,9 @@
 // PROJECTS
 
+
 .project-area {
   margin-left: auto;
   margin-right: auto;
-  // background-color: red;
-}
-
-.project-area {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -34,6 +31,7 @@
 .project-card-text {
   padding: 40px 40px 20px 40px;
 }
+
 .project-card p {
   color: $grey;
   font-size: 1rem;
@@ -47,29 +45,31 @@
 
 .phone-image {
   border-radius: 12px;
-  width: 150px;
+  width: 175px;
   overflow: hidden;
   border: solid 5px #232323;
   margin-top: -70px;
-  margin-bottom: -8px;
-  margin-right: -8px;
+  // margin-bottom: -8px;
+  // margin-right: -8px;
 }
 
 .desktop-image {
   border-radius: 12px;
-  width: 350px;
+  width: 450px;
   overflow: hidden;
   border: solid 5px #232323;
   margin-top: -70px;
-  margin-bottom: -8px;
-  margin-right: -8px;
+  // margin-bottom: -8px;
+  // margin-right: -8px;
 }
 
 .project-languages-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
-  height: 30px;
+  // height: 30px;
 }
+
 
 .project-chip {
   background-color: rgba(255, 255, 255, 0.97);
@@ -98,4 +98,50 @@
 .project-bg {
   background-size: cover;
   background-position: center center;
+}
+
+
+// MEDIA QUERIES FOR RESPONSIVE DESIGN
+
+
+/* Large devices (laptops/desktops, between 1300px and 992px width) */
+@media only screen and (max-width: 1299px) {
+  // Language icons in language bar: reduce size
+
+  // Ensure phone image inside project card doesn't overlap
+  .phone-image {
+    margin-top: -50px;
+    width: 150px;
+  }
+
+  .desktop-image {
+    width: 350px
+  }
+}
+
+/* Medium devices (landscape tablets, between 992px and 768px width) */
+@media only screen and (max-width: 991px) {
+  // Language icons in language bar: reduce size and add horizontal scroll
+
+}
+
+/* Small devices (portrait tablets and large phones, between 768px and 600px width) */
+@media only screen and (max-width: 767px) {
+  // Langugage icons in the language bar: ensure the above rules are inherited
+
+  // Ensure phone image inside project card doesn't overlap
+  .phone-image,
+  .desktop-image {
+    margin-top: 0px;
+  }
+}
+
+/* Extra small devices (phones, less than 600px width) */
+@media only screen and (max-width: 599px) {
+  /* Your styles for extra small (mobile) devices here */
+}
+
+/* Optionally, if you need a breakpoint for very large screens, use min-width */
+@media only screen and (min-width: 1600px) {
+  /* Your styles for very large screens here */
 }
