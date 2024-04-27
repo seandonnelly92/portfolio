@@ -41,6 +41,7 @@ nav i:hover {
 .menu-item {
   height: 48px;
   width: 33%;
+  padding: 0px 4px 0px 4px;
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -48,7 +49,8 @@ nav i:hover {
   color: $grey
 }
 
-.menu-item:hover, .active {
+.menu-item:hover,
+.active {
   color: white;
   background-color: $green-secondary;
   border: 1px solid $green-outline;
@@ -129,7 +131,7 @@ nav i:hover {
   padding: 4px 12px
 }
 
-.availability-chip > p {
+.availability-chip>p {
   color: $green-primary;
   margin: 0px 0px 0px 4px;
   font-size: 12px;
@@ -192,8 +194,7 @@ nav i:hover {
 // MEDIA QUERIES FOR RESPONSIVE DESIGN
 
 /* Large devices (laptops/desktops, between 1300px and 992px width) */
-@media only screen and (max-width: 1299px) {
-}
+@media only screen and (max-width: 1299px) {}
 
 /* Medium devices (landscape tablets, between 992px and 768px width) */
 @media only screen and (max-width: 991px) {
@@ -215,7 +216,9 @@ nav i:hover {
 
 /* Extra small devices (phones, less than 600px width) */
 @media only screen and (max-width: 599px) {
-  nav img, nav i {
+
+  nav img,
+  nav i {
     transform: scale(0.9);
     padding: 2px
   }
