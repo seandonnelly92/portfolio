@@ -1,20 +1,12 @@
-<nav>
-  <!-- LATER: make this image swap to the other avatar on hover -->
-  <%= image_tag("sean-avatar.png", :alt => "Sean's Avatar", style: 'height: 40px; width:auto') %>
-  <h4>Sean Donnelly</h4>
-  <a href="https://www.github.com/seandonnelly92" target="_blank"><i class="fa-brands fa-github"></i></a>
-  <a href="https://www.linkedin.com/in/seandonnelly92" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-</nav>
-
 <!-- FIXED MENU -->
-<div class="menu col-lg-3 col-md-5 col-sm-8 col-10">
-  <a href="#intro" class="menu-item">Intro</a>
-  <a href="#projects" class="menu-item">Projects</a>
-  <a href="#contact" class="menu-item">Contact</a>
+<div class="menu col-lg-3 col-md-5 col-sm-8 col-10" data-controller="scroller">
+  <%= link_to "Intro", "#intro", class: "menu-item", "data-scroller-target": "menuItem", "data-action": "scroll->scroller#setActiveSection" %>
+  <%= link_to "Projects", "#projects", class: "menu-item", "data-scroller-target":"menuItem", "data-action":"scroll->scroller#setActiveSection" %>
+  <%= link_to "Contact", "#contact", class: "menu-item", "data-scroller-target":"menuItem", "data-action":"scroll->scroller#setActiveSection" %>
 </div>
 
 <!-- INTRO -->
-<div class="d-flex justify-content-center">
+<div class="d-flex justify-content-center section" id="intro" data-scroller-target="section">
   <div class="box intro-box col-sm-11 col-md-8 col-lg-6">
     <div class="project-card-text">
       <h3>👋🏻 I'm Sean, a Software Engineer with loads of product experience, ideas and energy</h3>
@@ -36,20 +28,22 @@
 </div>
 
 <!-- PROJECTS -->
-<div class="project-area" id="projects">
+<div class="project-area section" id="projects" data-scroller-target="section">
+  >
   <!-- Sticky Languages Filter -->
   <%= render partial: 'components/languages_bar' %>
   <%= render partial: 'components/projects' %>
 </div>
 
 <!-- CONTACT AREA -->
-<div class="d-flex justify-content-center" id="contact">
+<div class="d-flex justify-content-center section" id="contact" data-scroller-target="section">
   <div class="box col-sm-11 col-md-8 col-lg-6">
     <h2>I'd love to hear from you</h1>
     <p>Send me a message below and I’ll get straight back to you.</p>
-    <p>Send me a message below and I’ll get straight back to you.</p>
-    <p>Send me a message below and I’ll get straight back to you.</p>
-    <p>Send me a message below and I’ll get straight back to you.</p>
+    <p>Send me a message below and I'll get straight back to you.</p>
+    <p>Send me a message below and I'll get straight back to you.</p>
+    <p>Send me a message below and I'll get straight back to you.</p>
+    <p>Send me a message below and I'll get straight back to you.</p>
   </div>
 </div>
 
@@ -57,10 +51,9 @@
 <div class="d-flex justify-content-center">
   <div class="box col-sm-11 col-md-8 col-lg-6">
     <h2>I'd love to hear from you</h1>
-    <p>Send me a message below and I’ll get straight back to you.</p>
-    <p>Send me a message below and I’ll get straight back to you.</p>
-    <p>Send me a message below and I’ll get straight back to you.</p>
-    <p>Send me a message below and I’ll get straight back to you.</p>
-
+    <p>Send me a message below and I'll get straight back to you.</p>
+    <p>Send me a message below and I'll get straight back to you.</p>
+    <p>Send me a message below and I'll get straight back to you.</p>
+    <p>Send me a message below and I'll get straight back to you.</p>
   </div>
 </div>
