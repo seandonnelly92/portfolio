@@ -57,6 +57,13 @@ nav i:hover {
   text-decoration: none;
 }
 
+// ADDING MARGIN TO DIVS FOR PAGE SCROLL
+#intro, #projects, #contact {
+  scroll-margin-top: 70px;
+}
+
+
+
 // INTRO BOX
 .box {
   background-color: $green-secondary;
