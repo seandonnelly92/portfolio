@@ -93,8 +93,6 @@ nav i:hover {
   aspect-ratio: 1;
 }
 
-
-
 // LANGUAGE BAR
 .languages-bar {
   display: flex;
@@ -255,6 +253,14 @@ nav i:hover {
 
   .availability-chip {
     display: none;
+  }
+
+  .languages-bar {
+    padding-top: 66px;
+    margin-top: -64px;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+
   }
 
   // Make language toggles smaller for smaller screen size
