@@ -9,5 +9,6 @@ window.Stimulus   = application
 export { application }
 
 
-import ScrollerController from "/assets/controllers/scroller_controller.js"
+import ScrollerController from "controllers/scroller_controller"
+// import ScrollerController from "controllers/scroller_controller.js"
 Stimulus.register("scroller-controller", ScrollerController)
