@@ -1,8 +1,9 @@
+<div data-controller="scroller">
 <!-- FIXED MENU -->
-<div class="menu col-lg-3 col-md-4 col-sm-6 col-7" data-controller="scroller">
-  <%= link_to "Intro", "#intro", class: "menu-item", "data-scroller-target": "menuItem", "data-action": "scroll->scroller#setActiveSection" %>
-  <%= link_to "Projects", "#projects", class: "menu-item", "data-scroller-target":"menuItem", "data-action":"scroll->scroller#setActiveSection" %>
-  <%= link_to "Contact", "#contact", class: "menu-item", "data-scroller-target":"menuItem", "data-action":"scroll->scroller#setActiveSection" %>
+<div class="menu col-lg-3 col-md-4 col-sm-6 col-7">
+  <%= link_to "Intro", "#intro", class: "menu-item", data: { scroller_target: "menuItem", action: "scroll->scroller#checkActiveSection"} %>
+  <%= link_to "Projects", "#projects", class: "menu-item", data: { scroller_target: "menuItem", action: "scroll->scroller#checkActiveSection"} %>
+  <%= link_to "Contact", "#contact", class: "menu-item", data: { scroller_target: "menuItem", action: "scroll->scroller#checkActiveSection"} %>
 </div>
 
 <!-- INTRO -->
@@ -45,4 +46,5 @@
 
 <%# FOOTER %>
 <div style="height: 800px">
+</div>
 </div>
