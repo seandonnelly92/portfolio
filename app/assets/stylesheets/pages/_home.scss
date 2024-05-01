@@ -46,7 +46,7 @@ nav i:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $grey
+  color: $grey;
 }
 
 .menu-item:hover,
@@ -228,9 +228,14 @@ nav i:hover {
     padding: 2px
   }
 
+  .menu-item {
+    font-size: 14px;
+  }
   .availability-chip {
     display: none;
   }
+
+
 }
 
 /* Optionally, if you need a breakpoint for very large screens, use min-width */
