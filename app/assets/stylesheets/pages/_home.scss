@@ -50,7 +50,8 @@ nav i:hover {
   transition: background-color 0.3s, color 0.3s
 }
 
-.menu-item:hover, .menu-item.active {
+.menu-item:hover,
+.menu-item.active {
   color: white;
   background-color: $green-secondary;
   border: 1px solid $green-outline;
@@ -58,7 +59,9 @@ nav i:hover {
 }
 
 // ADDING MARGIN TO DIVS FOR PAGE SCROLL
-#intro, #projects, #contact {
+#intro,
+#projects,
+#contact {
   scroll-margin-top: 70px;
 }
 
@@ -226,11 +229,13 @@ nav i:hover {
 
   // Make language toggles smaller for smaller screen size
   .language-toggle-container {
-    gap: 20px;
+    gap: 0px;
   }
 
   .language-toggle {
     transform: scale(0.7);
+    aspect-ratio: 1 / 1;
+    padding: 0px;
   }
 
 }
@@ -247,16 +252,21 @@ nav i:hover {
   .menu-item {
     font-size: 14px;
   }
+
   .availability-chip {
     display: none;
   }
 
   // Make language toggles smaller for smaller screen size
   .language-toggle-container {
-    gap: 12px;
+    gap: 4px;
   }
+
   .language-toggle {
-    transform: scale(0.7);
+    transform: scale(0.6);
+    aspect-ratio: 1 / 1;
+    padding: 0px;
+    width: 60px;
   }
 }
 
