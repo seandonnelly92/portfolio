@@ -47,10 +47,10 @@ nav i:hover {
   justify-content: center;
   align-items: center;
   color: $grey;
+  transition: background-color 0.3s, color 0.3s
 }
 
-.menu-item:hover,
-.active {
+.menu-item:hover, .menu-item.active {
   color: white;
   background-color: $green-secondary;
   border: 1px solid $green-outline;
