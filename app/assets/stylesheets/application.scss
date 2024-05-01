@@ -31,6 +31,15 @@ h5, h6 {
   font-weight: Medium;
 }
 
+// For screens under 600px wide (phones)
+@media only screen and (max-width: 599px) {
+  h3 {
+    font-size: calc(1.1rem + 0.6vw)
+  }
+}
+
+
+
 // Global
 
 * {
