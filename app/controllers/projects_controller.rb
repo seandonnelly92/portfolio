@@ -1,6 +1,5 @@
-class PortfolioController < ApplicationController
+class ProjectsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:collabradors, :whatmatters ]
-
   def collabradors
   end
 
