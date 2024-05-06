@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
 
-  get "portfolio/collabradors", to: "portfolio#collabradors"
+  get "projects/collabradors", to: "projects#collabradors"
 
   # root "posts#index"
 end
