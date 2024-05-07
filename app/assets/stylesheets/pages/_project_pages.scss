@@ -76,6 +76,7 @@
   display: block;
   object-fit: cover;
   width: 100%;
+  aspect-ratio: 16/9;
 }
 
 // MEDIA QUERIES FOR RESPONSIVENESS
@@ -96,12 +97,5 @@
 
   .left, .right {
     width: 100%;
-  }
-
-}
-
-@media (max-width: 600px) {
-  .carousel-image{
-    height: 50vh;
   }
 }
