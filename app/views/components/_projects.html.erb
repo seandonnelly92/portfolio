@@ -1,29 +1,29 @@
 <div class="project-area col-11">
   <!-- COLLABRADORS -->
-  <div class="box project-card col-12 col-md-5 project-bg bg-collabradors">
-    <div class="project-card-text">
-      <h5>Collabradors</h5>
-      <p class="sub-text">A web app helping pet owners organise free, reciprocal pet care locally</p>
-      <div class="project-languages-row">
-        <%= image_tag("language-vectors/React-grey.png", :alt => "React", style: 'height: 30px; width:auto') %>
-        <%= image_tag("language-vectors/Ruby-on-Rails-grey.png", :alt => "Ruby on Rails", style: 'height: 30px; width:auto') %>
-        <%= image_tag("language-vectors/JavaScript-grey.png", :alt => "Ruby on Rails", style: 'height: 30px; width:auto') %>
-        <%= image_tag("language-vectors/HTML-grey.png", :alt => "HTML", style: 'height: 30px; width:auto') %>
-        <%= image_tag("language-vectors/CSS-grey.png", :alt => "CSS", style: 'height: 30px; width:auto') %>
-        <%= image_tag("language-vectors/Sass-grey.png", :alt => "Sass", style: 'height: 30px; width:auto') %>
-        <%= image_tag("language-vectors/PostgreSQL-grey.png", :alt => "PostgreSQL", style: 'height: 30px; width:auto') %>
+    <%= link_to '/projects/collabradors', class: "box project-card col-12 col-md-5 project-bg bg-collabradors" do %>
+      <div class="project-card-text">
+        <h5>Collabradors</h5>
+        <p class="sub-text">A web app helping pet owners organise free, reciprocal pet care locally</p>
+        <div class="project-languages-row">
+          <%= image_tag("language-vectors/React-grey.png", :alt => "React", style: 'height: 30px; width:auto') %>
+          <%= image_tag("language-vectors/Ruby-on-Rails-grey.png", :alt => "Ruby on Rails", style: 'height: 30px; width:auto') %>
+          <%= image_tag("language-vectors/JavaScript-grey.png", :alt => "Ruby on Rails", style: 'height: 30px; width:auto') %>
+          <%= image_tag("language-vectors/HTML-grey.png", :alt => "HTML", style: 'height: 30px; width:auto') %>
+          <%= image_tag("language-vectors/CSS-grey.png", :alt => "CSS", style: 'height: 30px; width:auto') %>
+          <%= image_tag("language-vectors/Sass-grey.png", :alt => "Sass", style: 'height: 30px; width:auto') %>
+          <%= image_tag("language-vectors/PostgreSQL-grey.png", :alt => "PostgreSQL", style: 'height: 30px; width:auto') %>
+        </div>
+        <div class="project-chip"><i class="fa-solid fa-people-group"></i>Team Project</div>
       </div>
-      <div class="project-chip"><i class="fa-solid fa-people-group"></i>Team Project</div>
-    </div>
-    <div class="device-image-container">
-      <div class="desktop-image">
-        <%= image_tag("collabradors/collabradors-home.png", :alt => "Collabradors Homepage", style: 'height: auto; width:100%') %>
+      <div class="device-image-container">
+        <div class="desktop-image">
+          <%= image_tag("collabradors/collabradors-home.png", :alt => "Collabradors Homepage", style: 'height: auto; width:100%') %>
+        </div>
       </div>
-    </div>
-  </div>
+    <% end %>
 
   <!-- WHAT MATTERS -->
-  <div class="box project-card col-12 col-md-5 project-bg bg-what-matters">
+  <%= link_to '/projects/what-matters', class: "box project-card col-12 col-md-5 project-bg bg-what-matters" do %>
     <div class="project-card-text">
       <h5>What Matters</h5>
       <p class="sub-text">A web app that helps people identify, create and maintain habits that increase fulfilment</p>
@@ -43,7 +43,7 @@
         <%= image_tag("what-matters/what-matters-habit-tracker.png", :alt => "What Matters Habit Tracker", style: 'height: auto; width:100%') %>
       </div>
     </div>
-  </div>
+    <% end %>
 
 <!-- DONATION APP - REACT -->
 

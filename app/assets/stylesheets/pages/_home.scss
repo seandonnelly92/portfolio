@@ -65,34 +65,6 @@ nav i:hover {
   scroll-margin-top: 70px;
 }
 
-// INTRO BOX
-.box {
-  background-color: $green-secondary;
-  border: solid 1px $green-outline;
-  border-radius: 60px;
-  // padding: 40px 40px;
-  margin: 16px;
-  position: relative;
-  overflow: hidden;
-}
-
-.box .inner {
-  margin: 40px;
-}
-
-.intro-box {
-  z-index: 9;
-}
-
-.profile-pic-div {
-  float: right;
-  border-radius: 20%;
-  overflow: hidden;
-  margin-top: -18%;
-  max-width: 35%;
-  aspect-ratio: 1;
-}
-
 // LANGUAGE BAR
 .languages-bar {
   display: flex;

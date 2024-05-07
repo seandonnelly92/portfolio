@@ -11,21 +11,26 @@
 @import "components/index";
 @import "pages/index";
 @import "components/projects";
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "pages/project_pages";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 // Fonts
 p {
-  font-family: Times 'Times New Roman', Times, serif;
+  font-family: Poppins, sans-serif;
   color: $text;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: Poppins;
   color: $text;
-  font-weight: 400;
+  font-weight: SemiBold;
 }
 
-h5, h6 {
+h5,
+h6 {
   font-family: Poppins;
   color: $text;
   font-weight: Medium;
@@ -50,12 +55,86 @@ body {
   background-color: $green-primary;
 }
 
-a {
+p a {
   color: $link;
   text-decoration: none;
 }
 
-a:hover {
+p a:hover {
   color: $link-hover;
   text-decoration: underline dotted;
+}
+
+a {
+  text-decoration: none;
+}
+
+// BUTTONS
+
+.button-row {
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.button-primary, .button-secondary {
+  background-color: purple;
+  width: fit-content;
+  padding: 12px 24px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.button-primary p, .button-secondary p, .button-primary i, .button-secondary i {
+  margin: 0px;
+  color: $green-primary;
+  font-size: 16px;
+}
+
+.button-primary {
+  background-color: $link;
+}
+
+.button-primary:hover {
+  background-color: $link-hover;
+}
+
+.button-secondary {
+  background-color: $grey;
+}
+
+.button-secondary:hover {
+  filter: brightness(1.2);
+}
+
+
+// BOXES
+.box {
+  background-color: $green-secondary;
+  border: solid 1px $green-outline;
+  border-radius: 60px;
+  // margin: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.box .inner {
+  margin: 40px;
+}
+
+.intro-box {
+  z-index: 9;
+  margin: 16px;
+}
+
+.profile-pic-div {
+  float: right;
+  border-radius: 20%;
+  overflow: hidden;
+  margin-top: -18%;
+  max-width: 35%;
+  aspect-ratio: 1;
 }
