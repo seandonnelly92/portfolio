@@ -56,18 +56,17 @@
   width: 60%;
 }
 
+// Overview
 .overview {
   height: fit-content;
 }
 
-
-.tools {
-  height: fit-content;
+.overview .caption {
+  font-size: small;
+  color: $grey;
 }
 
-
-// CAROUSEL
-
+// Carousel
 .project-carousel {
   height: fit-content;
 }
@@ -78,6 +77,57 @@
   width: 100%;
   aspect-ratio: 16/9;
 }
+
+// Key Contributions
+.contribution {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.contribution p {
+  margin: 0px
+}
+
+.contribution i {
+  font-size: 24px;
+  color: white;
+}
+
+// Tools  & Technologies
+.tools {
+  position: relative;
+  height: fit-content;
+}
+
+.box.tools {
+  background-color: transparent;
+}
+
+.coloured-bg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('coloured-bg.png');
+  background-size: cover;
+  opacity: 0.4;
+  filter: blur(10px);
+}
+
+.tools-icons {
+  height: 40px;
+  width: auto;
+  margin-right: 16px;
+}
+
+.tools h4, .tools .tools-icons {
+  z-index: 1;
+}
+
 
 // MEDIA QUERIES FOR RESPONSIVENESS
 @media (max-width: 1000px) {
