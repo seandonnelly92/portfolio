@@ -10,6 +10,12 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
 
   get "projects/collabradors", to: "projects#collabradors"
+  get "projects/what-matters", to: "projects#whatmatters"
+  get "projects/yes-gaffer", to: "projects#yesgaffer"
+  get "projects/ripples", to: "projects#ripples"
+  get "projects/charitybi", to: "projects#charitybi"
+  get "projects/portfolio", to: "projects#portfolio"
+
 
   # root "posts#index"
 end

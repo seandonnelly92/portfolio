@@ -129,6 +129,14 @@
   z-index: 1;
 }
 
+// YOUTUBE DEMO DAY
+.bottom-right {
+  display: flex;
+  flex-direction :column;
+  width: 100%;
+  gap: 16px;
+}
+
 
 // MEDIA QUERIES FOR RESPONSIVENESS
 @media (max-width: 1000px) {

@@ -1,20 +1,23 @@
 class ProjectsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:collabradors, :whatmatters ]
+  skip_before_action :authenticate_user!, only: [:collabradors, :whatmatters, :yesgaffer, :ripples, :charitybi, :donationapp ]
   def collabradors
   end
 
   def whatmatters
   end
 
-  def charitybi
+  def yesgaffer
   end
 
-  def donationapp
+  def ripples
   end
 
   def portfolio
   end
 
-  def ripples
+  def charitybi
+  end
+
+  def donationapp
   end
 end

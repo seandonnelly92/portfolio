@@ -1,0 +1,133 @@
+<div class="col-11 mx-auto contents">
+    <%= render partial: 'components/project_breadcrumbs' %>
+    <h3>What Matters</h3>
+  </div>
+
+  <div class="top">
+      <%# OVERVIEW %>
+      <div class="box project-card-text overview left">
+        <h4>A habit tracking app that helps you see, plan and do What Matters</h4>
+        <p>If you live until 90 years old, do you know roughly how many more days you'll spend with your parents or your children? Take the interactive quiz inside What Matters to find out. The result will probably surprise you. And if it does, this platform will help you create small, sustainable habits to help you make time for What Matters.</p>
+        <p>My team of four designed and built this platform from scratch in just 10 days with Ruby on Rails. The interactive quiz is packed full of clever, interactive JavaScript, as is the streak counter that keeps users motivated. Head to www.dwmatters.com and take the quiz!</p>
+        <div class="button-row">
+          <%= link_to "https://www.collabradors.co.uk", target: :_blank do %>
+            <div class="button-primary">
+              <p>Visit Website</p>
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </div>
+          <% end %>
+          <%= link_to "https://github.com/seandonnelly92/collabrador", target: :_blank do %>
+            <div class="button-secondary">
+              <p>See on Github</p>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          <% end %>
+        </div>
+      </div>
+
+      <%# CAROUSEL %>
+      <div id="project-carousel" class="box right project-carousel carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="20000">
+            <%= video_tag("what-matters-dots-filling-video.mp4", class: "carousel-image", controls: true, autoplay: true, muted: true) %>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag("what-matters/what-matters-screenshots-mobile.png", alt: "Collabradors pet and owner profile page 1 of 2", class: "carousel-image") %>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag("what-matters/what-matters-desktop-my-habits.png", alt: "Collabradors pet and owner profile page 2 of 2", class: "carousel-image") %>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag("what-matters/what-matters-habit-tracking.png", alt: "Collabradors add a pet form", class: "carousel-image") %>
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#project-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#project-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+        </div>
+      </div>
+
+    <div class="bottom">
+      <%# KEY CONTRIBUTIONS %>
+      <div class="box project-card-text key-contributions left">
+        <h4>Key Contributions</h4>
+
+        <div class="contribution">
+          <i class="fa-solid fa-lightbulb"></i>
+          <p>I fused together ideas from <%= link_to "Tim Urban", "https://waitbutwhy.com/2015/12/the-tail-end.html",  target: "_blank" %> and James Clear's <%= link_to "Atomic Habits", "https://jamesclear.com/atomic-habits",  target: "_blank" %>, along with research on human happiness, to come up with What Matters. I pitched the idea to the students and teachers at my coding bootcamp and it was voted to be built. </p>
+        </div>
+
+        <div class="contribution">
+          <i class="fa-brands fa-figma"></i>
+          <p>Led UX design in Figma</p>
+        </div>
+
+        <div class="contribution">
+          <i class="fa-solid fa-list-check"></i>
+          <p>Led Project Management (Agile methodologies)</p>
+        </div>
+
+        <div class="contribution">
+          <i class="fa-solid fa-code"></i>
+          <p>Implemented CRUD functionality for habits profiles in Ruby</p>
+        </div>
+
+        <div class="contribution">
+          <i class="fa-solid fa-palette"></i>
+          <p>Designed and implemented habit cards and habit creation form</p>
+        </div>
+
+        <div class="contribution">
+          <i class="fa-solid fa-fire"></i>
+          <p>Created positive reinforcement and gamification by building animations into the streak counter and success messages when checking off a habit</p>
+        </div>
+
+      </div>
+
+      <div class="bottom-right">
+      <%# TOOLS & TECHNOLOGIES %>
+        <div class="box project-card-text tools right bottom-right">
+          <h4>Tools & Technologies</h4>
+          <div class="project-languages-row">
+            <%= image_tag("language-vectors/Ruby-grey.png", :alt => "Ruby", class:"tools-icons") %>
+            <%= image_tag("language-vectors/Ruby-on-Rails-grey.png", :alt => "Ruby on Rails", class:"tools-icons") %>
+            <%= image_tag("language-vectors/HTML-grey.png", :alt => "HTML", class:"tools-icons") %>
+            <%= image_tag("language-vectors/CSS-grey.png", :alt => "CSS", class:"tools-icons") %>
+            <%= image_tag("language-vectors/Sass-grey.png", :alt => "Sass", class:"tools-icons") %>
+            <%= image_tag("language-vectors/JavaScript-grey.png", :alt => "JavaScript", class:"tools-icons") %>
+            <%= image_tag("language-vectors/Stimulus-grey.png", :alt => "Stimulus", class:"tools-icons") %>
+            <%= image_tag("language-vectors/PostgreSQL-grey.png", :alt => "PostgreSQL", class:"tools-icons") %>
+            <%= image_tag("language-vectors/figma-grey.png", :alt => "Figma", class:"tools-icons") %>
+          </div>
+          <div class="coloured-bg"></div>
+        </div>
+
+        <%# YOUTUBE VIDEO DEMO DAY %>
+        <div class="box right" style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0;">
+          <iframe
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+            src="https://www.youtube-nocookie.com/embed/ZanllqDxnYU?si=BAbI-pzr6O6iZAPL&amp;start=736&rel=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+
+      </div>
+  </div>
+</div>
