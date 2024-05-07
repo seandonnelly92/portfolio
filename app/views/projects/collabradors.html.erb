@@ -1,3 +1,75 @@
-<div class="col-11 mx-auto">
-  <p>My project pages are under construction - check back soon!</p>
+<div class="col-11 mx-auto contents">
+  <%= render partial: 'components/project_breadcrumbs' %>
+  <h3>Collabradors</h3>
+  </div>
+
+  <div class="top">
+      <%# OVERVIEW %>
+      <div class="box project-card-text overview left">
+        <h4>Collabradors helps dog owners find other dog owners</h4>
+        <p>I’ve been building B2B and B2C tech products as a non-technical startup founder for over 5 years. Now, I’m focused on Software Engineering after completing an intensive coding bootcamp.</p>
+        <p>I have led Product, UX, User Research, Sales, Marketing, Fundraising, Management and Compliance. So, it’s fair to say I’m exceptionally adaptable and resilient. I'm a proactive problem-solver and I enjoy big challenges.</p>
+        <div class="button-row">
+          <%= link_to "https://www.collabradors.co.uk", target: :_blank do %>
+            <div class="button-primary">
+              <p>Visit Website</p>
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </div>
+          <% end %>
+          <%= link_to "https://github.com/seandonnelly92/collabrador", target: :_blank do %>
+            <div class="button-secondary">
+              <p>See on Github</p>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          <% end %>
+        </div>
+      </div>
+
+      <%# CAROUSEL %>
+      <div id="project-carousel" class="box right project-carousel carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <%= image_tag("collabradors/collabradors-home.png", alt: "First slide", class: "carousel-image") %>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag("collabradors/collabradors-home.png", alt: "First slide", class: "carousel-image") %>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag("collabradors/collabradors-home.png", alt: "First slide", class: "carousel-image") %>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#project-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#project-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <%# KEY CONTRIBUTIONS %>
+      <div class="box project-card-text left">
+        <h4>Key Contributions</h4>
+        <p>I’ve been building B2B and B2C tech products as a non-technical startup founder for over 5 years. Now, I’m focused on Software Engineering after completing an intensive coding bootcamp.</p>
+        <p>I’ve been building B2B and B2C tech products as a non-technical startup founder for over 5 years. Now, I’m focused on Software Engineering after completing an intensive coding bootcamp.</p>
+        <p>I’ve been building B2B and B2C tech products as a non-technical startup founder for over 5 years. Now, I’m focused on Software Engineering after completing an intensive coding bootcamp.</p>
+        <p>I have led Product, UX, User Research, Sales, Marketing, Fundraising, Management and Compliance. So, it’s fair to say I’m exceptionally adaptable and resilient. I'm a proactive problem-solver and I enjoy big challenges.</p>
+      </div>
+
+      <%# TOOLS & TECHNOLOGIES %>
+      <div class="box project-card-text tools right">
+        <h4>Tools & Technologies</h4>
+        <p>I’ve been building B2B and B2C tech products as a non-technical startup founder for over 5 years. Now, I’m focused on Software Engineering after completing an intensive coding bootcamp.</p>
+      </div>
+    </div>
+
+  </div>
 </div>
