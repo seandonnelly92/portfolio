@@ -49,7 +49,7 @@ export default class extends Controller {
       const showProject = this.activeLanguages.size === 0 || [...this.activeLanguages].some(toggledLang => projectLanguages.includes(toggledLang))
 
       // If showProject is true, display the project; otherwise, hide it
-      project.style.display = showProject ? 'block' : 'none'
+      project.style.display = showProject ? 'flex' : 'none'
     })
   }
 }
