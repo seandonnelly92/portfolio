@@ -5,17 +5,22 @@ export default class extends Controller {
   static targets = ["toggle"]
 
   connect() {
+    console.log("Hello from the filter controller")
     this.activeLanguages = new Set()
     this.filterProjects()
   }
 
   toggleLanguage(event) {
-    const language = event.target.getAttribute('data-language')
-    if (event.target.checked) {
+    const toggle = event.currentTarget
+    const language = toggle.getAttribute('data-language')
+    const isActive = toggle.classList.toggle("active")
+
+    if (isActive) {
       this.activeLanguages.add(language)
     } else {
       this.activeLanguages.delete(language)
     }
+
     this.filterProjects()
   }
 

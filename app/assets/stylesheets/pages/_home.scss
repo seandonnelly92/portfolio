@@ -156,7 +156,7 @@ nav i:hover {
 }
 
 // Applies these rules to all elements inside the language-toggle div on hover
-.language-toggle:hover * {
+.language-toggle:hover *, .language-toggle.active * {
   fill: $toggle-on;
   color: $toggle-on;
   transition: 0.1s ease;
