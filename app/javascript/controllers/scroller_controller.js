@@ -54,24 +54,9 @@ export default class extends Controller {
 
   }
 
-
-
-
-
-
-
-
-
-
-
-
   disconnect() {
     window.removeEventListener('scroll', this.checkActiveSection);
   }
-
-
-
-
 
   setActiveSection() {
     let currentSection;
