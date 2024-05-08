@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sean Donnelly</title>
+    <title><%= content_for?(:title) ? yield(:title) : "Sean Donnelly" %></title>
+    <%# Checks if there's a dynamic content available for the title. If true, use that. If false, fall back to Sean Donnelly %>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Sean Donnelly's portfolio showcasing tech projects he has built." %>">
+    <meta name="keywords" content="<%= content_for?(:keywords) ? yield(:keywords) : "Sean Donnelly, Portfolio, Ripples, Roundups, CharityBI, Yes Gaffer!, Collabradors, What Matters" %>">
+    <meta name="author" content="<%= content_for?(:author) ? yield(:author) : 'Sean Donnelly' %>">
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
