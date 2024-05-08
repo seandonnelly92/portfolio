@@ -10,9 +10,9 @@ class ContactFormMailer < ApplicationMailer
     @contact = contact
 
     mail(
-      from: "#{@contact.name} <#{@contact.email}>,
+      from: "#{@contact.name} <#{@contact.email}>",
       to: "Sean Donnelly <seandonnelly92@gmail.com>",
       bcc: "Sean Donnelly <sean_donnelly@hotmail.co.uk>",
-      subject: "Message to Sean")
+      subject: "Sean & #{@contact.name}")
   end
 end

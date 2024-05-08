@@ -1,3 +1,7 @@
-ContactForm#new_form_submission
+New Contact Form Submission
 
-<%= @greeting %>, find me in app/views/contact_form_mailer/new_form_submission.text.erb
+Name: <%= @contact.name %>
+Email: <%= @contact.email %>
+
+Message:
+<%= @contact.message %>
