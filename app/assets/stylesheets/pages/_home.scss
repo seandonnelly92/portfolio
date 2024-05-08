@@ -153,6 +153,7 @@ nav i:hover {
   text-align: center;
   color: $toggle-off;
   transition: 0.1s ease;
+  cursor: pointer;
 }
 
 // Applies these rules to all elements inside the language-toggle div on hover
