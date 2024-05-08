@@ -1,7 +1,7 @@
 <div class="project-area col-11">
   <!-- COLLABRADORS -->
-    <%= link_to '/projects/collabradors', class: "box project-card col-12 col-md-5 project-bg bg-collabradors" do %>
-      <div class="project-card-text" data-languages="ruby">
+    <%= link_to '/projects/collabradors', class: "box project-card col-12 col-md-5 project-bg bg-collabradors", data: { languages: "ruby rails html css sass javascript stimulus postgresql figma" } do %>
+      <div class="project-card-text">
         <h5>Collabradors</h5>
         <p class="sub-text">A web app helping pet owners organise free, reciprocal pet care locally</p>
         <div class="project-languages-row">
@@ -24,8 +24,8 @@
       </div>
     <% end %>
 
-  <!-- WHAT MATTERS -->
-  <%= link_to '/projects/what-matters', class: "box project-card col-12 col-md-5 project-bg bg-what-matters" do %>
+<!-- WHAT MATTERS -->
+  <%= link_to '/projects/what-matters', class: "box project-card col-12 col-md-5 project-bg bg-what-matters", data: { languages: "ruby rails html css sass javascript stimulus postgresql figma" } do %>
     <div class="project-card-text">
       <h5>What Matters</h5>
       <p class="sub-text">A web app that helps people identify, create and maintain meaningful habits that will improve their happiness</p>
@@ -50,7 +50,7 @@
     <% end %>
 
 <!-- YES GAFFER! -->
-<div class="box project-card col-12 col-md-6 project-bg bg-yes-gaffer">
+<%= link_to '/projects/what-matters', class: "box project-card col-12 col-md-6 project-bg bg-yes-gaffer", data: { languages: "ruby rails html css sass javascript stimulus postgresql figma" } do %>
   <div class="project-card-text">
     <div class="d-flex gap-1"><h5>Yes Gaffer!</h5><p> (Coming soon)</p></div>
     <p class="sub-text">The fastest and funnest way to sort fixtures, availability and lineups</p>
@@ -72,53 +72,54 @@
       <%= image_tag("yes-gaffer/yes-gaffer-board.png", :alt => "Yes Gaffer tactics board screenshot", style: 'height: auto; width:100%') %>
     </div>
   </div>
-</div>
+<% end %>
+
 
 <!-- RIPPLES -->
-<div class="box project-card col-12 col-md-3 project-bg bg-ripples">
-  <div class="project-card-text">
-    <div class="d-flex gap-1"><h5>Ripples</h5><p> (Coming soon)</p></div>
-    <p class="sub-text">In 2020 I co-founded the award-winning donation platform, Ripples (formerly Roundups). I led Product Management, among many other things!</p>
-    <div class="project-languages-row">
-      <%= image_tag("language-vectors/figma-grey.png", :alt => "Figma", class: "languages-row-icon") %>
+<%= link_to '/projects/what-matters', class: "box project-card col-12 col-md-3 project-bg bg-ripples", data: { languages: "figma" } do %>
+    <div class="project-card-text">
+      <div class="d-flex gap-1"><h5>Ripples</h5><p> (Coming soon)</p></div>
+      <p class="sub-text">In 2020 I co-founded the award-winning donation platform, Ripples (formerly Roundups). I led Product Management, among many other things!</p>
+      <div class="project-languages-row">
+        <%= image_tag("language-vectors/figma-grey.png", :alt => "Figma", class: "languages-row-icon") %>
+      </div>
+        <div class="project-chip"><i class="fa-solid fa-people-group"></i>Team Project</div>
     </div>
-      <div class="project-chip"><i class="fa-solid fa-people-group"></i>Team Project</div>
-  </div>
-  <div class="device-image-container">
-    <div class="phone-image">
-      <%= image_tag("ripples/ripples-dashboard.gif", :alt => "Ripples Dashboard screenshot", style: 'height: auto; width:100%') %>
+    <div class="device-image-container">
+      <div class="phone-image">
+        <%= image_tag("ripples/ripples-dashboard.gif", :alt => "Ripples Dashboard screenshot", style: 'height: auto; width:100%') %>
+      </div>
     </div>
-  </div>
-</div>
+<% end %>
 
 <!-- CHARITYBI -->
-<div class="box project-card col-12 col-md-3 project-bg bg-charitybi">
-  <div class="project-card-text">
-    <div class="d-flex gap-1"><h5>CharityBI</h5><p> (Coming soon)</p></div>
-    <p class="sub-text">I'm currently re-buidling the marketing site  my startup, CharityBI. CharityBI is the integration hub for charity data.</p>
-    <div class="project-languages-row">
-      <%= image_tag("language-vectors/HTML-grey.png", :alt => "HTML", class: "languages-row-icon") %>
-      <%= image_tag("language-vectors/JavaScript-grey.png", :alt => "JavaScript", class: "languages-row-icon") %>
-      <%= image_tag("language-vectors/React-grey.png", :alt => "React", class: "languages-row-icon") %>
-      <%= image_tag("language-vectors/CSS-grey.png", :alt => "CSS", class: "languages-row-icon") %>
-      <%= image_tag("language-vectors/figma-grey.png", :alt => "Figma", class: "languages-row-icon") %>
+<%= link_to '/projects/what-matters', class: "box project-card col-12 col-md-3 project-bg bg-charitybi", data: { languages: "html css javascript react figma" } do %>
+    <div class="project-card-text">
+      <div class="d-flex gap-1"><h5>CharityBI</h5><p> (Coming soon)</p></div>
+      <p class="sub-text">I'm currently re-buidling the marketing site  my startup, CharityBI. CharityBI is the integration hub for charity data.</p>
+      <div class="project-languages-row">
+        <%= image_tag("language-vectors/HTML-grey.png", :alt => "HTML", class: "languages-row-icon") %>
+        <%= image_tag("language-vectors/CSS-grey.png", :alt => "CSS", class: "languages-row-icon") %>
+        <%= image_tag("language-vectors/JavaScript-grey.png", :alt => "JavaScript", class: "languages-row-icon") %>
+        <%= image_tag("language-vectors/React-grey.png", :alt => "React", class: "languages-row-icon") %>
+        <%= image_tag("language-vectors/figma-grey.png", :alt => "Figma", class: "languages-row-icon") %>
+      </div>
+      <div class="project-chip"><i class="fa-solid fa-person"></i>Solo Project</div>
     </div>
-    <div class="project-chip"><i class="fa-solid fa-person"></i>Solo Project</div>
+    <div class="device-image-container">
+          <div class="desktop-image">
+            <%= image_tag("charitybi/charitybi-homepage.png", :alt => "CharityBI homepage screenshot", style: 'height: auto; width:100%') %>
+          </div>
   </div>
-  <div class="device-image-container">
-        <div class="desktop-image">
-          <%= image_tag("charitybi/charitybi-homepage.png", :alt => "CharityBI homepage screenshot", style: 'height: auto; width:100%') %>
-        </div>
-  </div>
-</div>
+<% end %>
 
 
 <!-- PORTFOLIO -->
-<div class="box project-card col-12 col-md-3 project-bg">
-  <div class="project-card-text">
-    <h5>My Portfolio</h5>
-    <p class="sub-text">This portfolio is built with Ruby on Rails and hosted on Heroku</p>
-    <div class="project-languages-row">
+<%= link_to '/projects/what-matters', class: "box project-card col-12 col-md-3 project-bg", data: { languages: "ruby rails html css sass javascript stimulus postgresql figma" } do %>
+    <div class="project-card-text">
+      <h5>My Portfolio</h5>
+      <p class="sub-text">This portfolio is built with Ruby on Rails and hosted on Heroku</p>
+      <div class="project-languages-row">
       <%= image_tag("language-vectors/Ruby-grey.png", :alt => "Ruby", class: "languages-row-icon") %>
       <%= image_tag("language-vectors/Ruby-on-Rails-grey.png", :alt => "Ruby on Rails", class: "languages-row-icon") %>
       <%= image_tag("language-vectors/HTML-grey.png", :alt => "HTML", class: "languages-row-icon") %>
@@ -126,13 +127,16 @@
       <%= image_tag("language-vectors/Sass-grey.png", :alt => "Sass", class: "languages-row-icon") %>
       <%= image_tag("language-vectors/JavaScript-grey.png", :alt => "JavaScript", class: "languages-row-icon") %>
       <%= image_tag("language-vectors/Stimulus-grey.png", :alt => "Stimulus JS", class: "languages-row-icon") %>
+      <%= image_tag("language-vectors/PostgreSQL-grey.png", :alt => "PostgreSQL", class: "languages-row-icon") %>
+      <%= image_tag("language-vectors/figma-grey.png", :alt => "Figma", class: "languages-row-icon") %>
+      </div>
+      <div class="project-chip"><i class="fa-solid fa-person"></i>Solo Project</div>
     </div>
-    <div class="project-chip"><i class="fa-solid fa-person"></i>Solo Project</div>
+    <div class="device-image-container">
+      <div class="phone-image">
+        <%= image_tag("test-phone.png", :alt => "Sean Donnelly", style: 'height: auto; width:100%') %>
+      </div>
   </div>
-  <div class="device-image-container">
-    <div class="phone-image">
-      <%= image_tag("test-phone.png", :alt => "Sean Donnelly", style: 'height: auto; width:100%') %>
-    </div>
-  </div>
-</div>
+<% end %>
+
 </div>
