@@ -1,0 +1,14 @@
+<%= simple_form_for @contact, url: contact_form_index_path do |f| %>
+  <%= f.input :name, placeholder: "Name" %>
+  <%= f.input :email %>
+  <%= f.input :message, as: :text %>
+  <%= f.submit 'Send' %>
+<% end %>
+
+<% if flash[:notice] %>
+  <p class="notice"><%= flash[:notice] %></p>
+<% end %>
+
+<% if flash[:alert] %>
+  <p class="alert"><%= flash[:alert] %></p>
+<% end %>
