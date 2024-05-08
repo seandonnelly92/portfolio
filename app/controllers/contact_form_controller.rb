@@ -8,8 +8,9 @@ class ContactFormController < ApplicationController
         ContactFormMailer.new_form_submission(@contact).deliver_now
         redirect_to root_path, notice: "Thanks for your message. I usually respond within 24 hours."
       else
-        flash.now[:alert] = 'There was a problem with your message. Contact me on Linkedein.'
-        render :new
+      flash[:alert] = 'There was a problem sending your message. Is your email address correct?'
+      flash[:form_errors] = @contact.errors.full_messages
+      redirect_back fallback_location: root_path
       end
   end
 

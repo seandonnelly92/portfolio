@@ -1,14 +1,14 @@
 <%= simple_form_for @contact, url: contact_form_index_path do |f| %>
-  <%= f.input :name, placeholder: "Name" %>
-  <%= f.input :email %>
-  <%= f.input :message, as: :text %>
-  <%= f.submit 'Send' %>
-<% end %>
+  <%= f.input :name, placeholder: "Name", label: false, error: true %>
+  <%= f.input :email, placeholder: "Email", label: false, error: true  %>
+  <%= f.input :message, as: :text, placeholder: "Message", label: false, error: true  %>
+  <%= f.submit 'Send', class: 'button-primary' %>
 
-<% if flash[:notice] %>
-  <p class="notice"><%= flash[:notice] %></p>
-<% end %>
+  <% if flash[:notice] %>
+    <p class="notice"><%= flash[:notice] %></p>
+  <% end %>
 
-<% if flash[:alert] %>
-  <p class="alert"><%= flash[:alert] %></p>
+  <% if flash[:alert] %>
+    <p class="alert"><%= flash[:alert] %></p>
+  <% end %>
 <% end %>

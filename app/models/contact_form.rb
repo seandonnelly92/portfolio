@@ -12,5 +12,5 @@ class ContactForm
   # Requires the presence of all three fields
   validates :name, :email, :message, presence: true
   # Ruby standard library RegExp for email
-  validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
+  validates :email, format: { with: URI::MailTo::EMAIL_REGEXP,  message: "is not a valid email address" }
 end

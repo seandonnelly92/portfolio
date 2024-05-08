@@ -81,18 +81,18 @@ a {
 }
 
 .button-primary, .button-secondary {
-  background-color: purple;
   width: fit-content;
   padding: 12px 24px;
   display: flex;
   gap: 8px;
   align-items: center;
   border-radius: 30px;
+  color: $green-primary;
+  border: none;
 }
 
 .button-primary p, .button-secondary p, .button-primary i, .button-secondary i {
   margin: 0px;
-  color: $green-primary;
   font-size: 16px;
 }
 
