@@ -30,6 +30,7 @@ export default class extends Controller {
       // If the "active" class was removed, take this language out of the activeLanguages Set
       this.activeLanguages.delete(toggledLanguage)
     }
+
     // Now that we've updated the active languages, call the filterProjects function to update the project display
     this.filterProjects()
   }

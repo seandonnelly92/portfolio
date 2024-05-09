@@ -156,8 +156,18 @@ nav i:hover, .footer-icon:hover {
   cursor: pointer;
 }
 
-// Applies these rules to all elements inside the language-toggle div on hover
-.language-toggle:hover *, .language-toggle.active * {
+// Applies hover styles only on devices that can hover
+// Implemented this after realising that the hover state was lingering on mobile
+@media (hover: hover) and (pointer: fine) {
+  .language-toggle:hover * {
+    fill: $toggle-hover;
+    color: $toggle-hover;
+    transition: 0.1s ease;
+  }
+}
+
+// Applies to language toggles that are active
+.language-toggle.active * {
   fill: $toggle-on;
   color: $toggle-on;
   transition: 0.1s ease;
