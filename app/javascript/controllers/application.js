@@ -1,15 +1,12 @@
 import { Application } from "@hotwired/stimulus"
+import { eagerLoadControllersFrom } from "@hotwired/stimulus-loading"
 
+// Start Stimulus appliation
 const application = Application.start()
-
 // Configure Stimulus development experience
 application.debug = false
 window.Stimulus   = application
 
+eagerLoadControllersFrom("controllers", application)
+
 export { application }
-
-import ScrollerController from "controllers/scroller_controller"
-Stimulus.register("scroller-controller", ScrollerController)
-
-import FilterController from "./filter_controller"
-application.register("filter", FilterController)
