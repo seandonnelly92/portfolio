@@ -1,4 +1,4 @@
-// FIXED NAV BAR
+// STATIC NAV BAR
 nav {
   display: flex;
   align-items: center;
@@ -214,13 +214,18 @@ nav i:hover, .footer-icon:hover {
     margin-right: auto;
   }
 
+  .menu-item {
+    font-size: 15px;
+    height: 40px;
+  }
+
   // Make language toggles smaller for smaller screen size
   .language-toggle-container {
     gap: 0px;
   }
 
   .language-toggle {
-    transform: scale(0.7);
+    transform: scale(0.5);
     aspect-ratio: 1 / 1;
     padding: 0px;
   }
@@ -230,6 +235,10 @@ nav i:hover, .footer-icon:hover {
 /* Extra small devices (phones, less than 600px width) */
 @media only screen and (max-width: 599px) {
 
+  nav {
+    padding: 16px 15px 8px 15px;
+  }
+
   nav img,
   nav i {
     transform: scale(0.9);
@@ -237,18 +246,24 @@ nav i:hover, .footer-icon:hover {
   }
 
   .menu-item {
-    font-size: 14px;
+    font-size: 12px;
+    height: 32px;
   }
 
   .availability-chip {
     display: none;
   }
 
+  .language-toggle-container {
+    margin: 4px 16px 8px 16px;
+    padding: 0px 16px;
+  }
+
   .languages-bar {
     padding-top: 66px;
     margin-top: -64px;
     padding-bottom: 8px;
-    margin-bottom: 24px;
+    margin-bottom: 0px;
 
   }
 

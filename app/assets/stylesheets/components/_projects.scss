@@ -1,6 +1,5 @@
 // PROJECTS
 
-
 .project-area {
   margin-left: auto;
   margin-right: auto;
@@ -154,6 +153,9 @@
 /* Extra small devices (phones, less than 600px width) */
 @media only screen and (max-width: 599px) {
   /* Your styles for extra small (mobile) devices here */
+  .project-area {
+    margin-top: -16px
+  }
 }
 
 /* Optionally, if you need a breakpoint for very large screens, use min-width */
