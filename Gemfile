@@ -51,11 +51,12 @@ gem "font-awesome-sass", "~> 6.1"
 gem "simple_form", github: "heartcombo/simple_form"
 gem "sassc-rails"
 
-group :development, :test, :production do
-  gem "dotenv-rails"
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri mswin mswin64 mingw x64_mingw ]
-end
+gem "dotenv-rails"
+# group :development, :test, :production do
+#   gem "dotenv-rails"
+#   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
+#   gem "debug", platforms: %i[ mri mswin mswin64 mingw x64_mingw ]
+# end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
