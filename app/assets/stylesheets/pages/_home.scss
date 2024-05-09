@@ -17,13 +17,13 @@ nav h4 {
   font-weight: 400;
 }
 
-nav i {
+nav i, .footer-icon {
   color: $grey;
   font-size: 25px;
   padding-left: 16px;
 }
 
-nav i:hover {
+nav i:hover, .footer-icon:hover {
   color: white;
 }
 

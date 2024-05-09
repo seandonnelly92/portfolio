@@ -141,3 +141,20 @@ a {
   max-width: 35%;
   aspect-ratio: 1;
 }
+
+
+// FOOTER
+
+.footer {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px
+}
+
+.footer > p {
+  color: $grey;
+}

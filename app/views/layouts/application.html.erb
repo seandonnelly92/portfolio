@@ -19,5 +19,12 @@
     <%= render "shared/navbar" %>
     <%= render "shared/flashes" %>
     <%= yield %>
+    <div class= "footer">
+      <p>© Sean Donnelly <%= DateTime.now.year %></p>
+    <div>
+      <a href="https://www.github.com/seandonnelly92" target="_blank"><i class="fa-brands fa-github footer-icon"></i></a>
+      <a href="https://www.linkedin.com/in/seandonnelly92" target="_blank"><i class="fa-brands fa-linkedin-in footer-icon"></i></a>
+    </div>
+    </div>
   </body>
 </html>
