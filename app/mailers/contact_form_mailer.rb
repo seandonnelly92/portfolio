@@ -12,7 +12,7 @@ class ContactFormMailer < ApplicationMailer
     mail(
       from: "#{@contact.name} <#{@contact.email}>",
       to:  "Sean Donnelly <sean_donnelly@hotmail.co.uk>",
-      bcc: "Sean Donnelly <seandonnellywork@outlook.com>", "#{@contact.name} <#{@contact.email}>",
+      bcc: "Sean Donnelly <seandonnellywork@outlook.com>, #{@contact.name} <#{@contact.email}>",
       subject: "Sean & #{@contact.name}")
   end
 end
